@@ -1,3 +1,4 @@
+day 3 of my challenge
 class Solution(object):
     def canPlaceFlowers(self, flowerbed, n):
         """
