@@ -1,0 +1,19 @@
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        if n == 1:
+            return 1
+        if n == 2:
+            return 2
+
+        prev_step = 1
+        curr_step = 2
+        
+        for i in range(3, n + 1):
+            # To Calculate the current step by adding the previous two steps
+            next_step = prev_step + curr_step
+            # To Update the previous and current steps for the next iteration
+            prev_step = curr_step
+            curr_step = next_step
+        
+        return curr_step
+ 
